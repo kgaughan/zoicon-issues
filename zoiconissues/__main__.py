@@ -5,4 +5,4 @@ Small runner for development purposes.
 from zoiconissues.views import app
 
 
-app.run()
+app.run(debug=True)

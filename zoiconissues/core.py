@@ -7,7 +7,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 
 
 # Default config.
-DEBUG = True
+DEBUG = False
 SECRET_KEY = 'DEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEF'
 
 # Application setup.
