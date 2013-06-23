@@ -1,4 +1,5 @@
 include LICENSE ChangeLog buildkit.py requirements.txt
 recursive-include extra *.ini *.sql
 recursive-include zoiconissues/static *.css
+recursive-include zoiconissues/static/images *.png
 recursive-include zoiconissues/templates *.html
