@@ -1,3 +1,5 @@
+import datetime
+
 from flask.ext.sqlalchemy import SQLAlchemy
 
 from zoiconissues.core import app
@@ -33,10 +35,11 @@ class Project(db.Model):
         db.Integer,
         primary_key=True)
     project = db.Column(
-        db.String(64),
+        db.String(80),
         nullable=False)
     active = db.Column(
         db.Boolean,
+        default=True,
         nullable=False)
 
     issues = db.relationship('Issue', backref='project', lazy='dynamic')
@@ -68,12 +71,12 @@ class Issue(db.Model):
         backref=db.backref('issues', lazy='dynamic'))
 
 
-class Comment(db.Model):
+class Event(db.Model):
 
-    __tablename__ = 'comments'
+    __tablename__ = 'events'
 
     id = db.Column(
-        'comment_id',
+        'event_id',
         db.Integer,
         primary_key=True)
     issue_id = db.Column(
@@ -82,10 +85,11 @@ class Comment(db.Model):
         nullable=False)
     posted = db.Column(
         db.DateTime,
+        default=datetime.datetime.utcnow,
         nullable=False)
     comment = db.Column(
         db.Text,
-        nullable=False)
+        nullable=True)
 
 
 class Tag(db.Model):
@@ -105,4 +109,27 @@ class Tag(db.Model):
         nullable=False)
     colour = db.Column(
         db.String(6),
+        default='FF69B4',  # Hot pink, because *nobody* wants that.
+        nullable=False)
+    # Is this tag always listed?
+    persistent = db.Column(
+        db.Boolean,
+        default=False,
+        nullable=False)
+
+
+class User(db.Model):
+
+    __tablename__ = 'users'
+
+    id = db.Column(
+        'user_id',
+        db.Integer,
+        primary_key=True)
+    name = db.Column(
+        db.String(80),
+        nullable=False)
+    created = db.Column(
+        db.DateTime,
+        default=datetime.datetime.utcnow,
         nullable=False)
