@@ -1,0 +1,24 @@
+The frontpage is broken into the following:
+
+ a) A summary of the activity on issues related to the current user.
+
+ b) A list of assigned and watched bugs, ordered by how recently somebody
+    *other* than the current user has acted on them. There are additionally
+    other orderings that can be applied to the bug list, but that is the
+    default.
+
+Additionally, the following pages are available from the frontpage.
+
+ a) A list of projects, both active and inactive. The active projects are
+    listed in both the default 'projects' page and also from a menu displayed
+    when 'Projects' is moused over in the navigation. Inactive projects may
+    be shown is the 'inactive' tab on the project page is selected.
+
+    [Aside: should projects be taggable for discovery purposes?]
+
+ b) Project pages. These all active bugs. The ordering here is simpler and
+    the default is in reverse order of bug ID.
+
+Issues may be tagged. There are a fixed set of initial tags shared by all
+projects initially ('bug', 'duplicate', 'enhancement', 'invalid', 'question',
+'wontfix'), but additional tags may be added. A project's tag listing.
