@@ -3,8 +3,8 @@ Small runner for development purposes.
 """
 
 
-from zoiconissues.models import db
-from zoiconissues.views import app
+from .models import db
+from .views import app
 
 
 db.create_all()

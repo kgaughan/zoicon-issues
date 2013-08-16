@@ -4,7 +4,7 @@ View functions.
 
 from flask import request, render_template
 
-from zoiconissues.core import app
+from .core import app
 
 
 @app.route('/')

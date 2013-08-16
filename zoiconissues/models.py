@@ -2,7 +2,7 @@ import datetime
 
 from flask.ext.sqlalchemy import SQLAlchemy
 
-from zoiconissues.core import app
+from .core import app
 
 
 db = SQLAlchemy(app)
