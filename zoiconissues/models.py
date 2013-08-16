@@ -63,7 +63,7 @@ class Issue(db.Model):
         db.String(255),
         nullable=False)
 
-    comments = db.relationship('Comment', backref='issue', lazy='dynamic')
+    events = db.relationship('Event', backref='issue', lazy='dynamic')
 
     tags = db.relationship(
         'Tag',
