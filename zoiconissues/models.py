@@ -133,3 +133,7 @@ class User(db.Model):
         db.DateTime,
         default=datetime.datetime.utcnow,
         nullable=False)
+
+
+if __name__ == '__main__':
+    db.create_all()
