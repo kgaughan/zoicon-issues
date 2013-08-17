@@ -5,6 +5,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 html {
 	font-family: "Merriweather Sans", sans-serif;
+	color: #555;
 }
 body {
 	line-height: 1.5;
@@ -65,7 +66,10 @@ th, td {
 	border-bottom: 1px solid #48a;
 }
 .issues table td, .issues table th {
-	padding: 0.5ex 1ex;
+	padding: 0.5ex 2ex;
+}
+.issues table td + td, .issues table th + th {
+	padding-left: 0;
 }
 .issues span.project {
 	font-size: 80%;
@@ -74,7 +78,7 @@ th, td {
 }
 .issues table td.issue-id {
 	font-size: 200%;
-	padding: 0.25ex 0.5ex;
+	padding: 0.25ex 1ex;
 	line-height: 1;
 	width: 1px;
 	text-align: right;
@@ -88,9 +92,12 @@ th, td {
 	background: #aef;
 }
 .issues table td.gravatar {
-	padding: 0;
 	line-height: 0;
-	width: 56px;
+	width: 48px;
+}
+
+.issues table td.gravatar img {
+	border-radius: 5px;
 }
 
 .overview table td {
