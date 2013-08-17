@@ -1,4 +1,51 @@
 {% extends "layout.html" %}
 {% block body %}
-<p>Overview</p>
+
+<div class="overview">
+	<table>
+		<thead>
+			<tr>
+				<th>Widgets</th>
+				<th>Thingies</th>
+				<th>Wotsits</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>5</td>
+				<td>0:00:00</td>
+				<td>25,453</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="issues">
+<h2>Your Assigned Issues</h2>
+<table>
+	<tbody>
+		<tr>
+			<td class="issue-id"><a href="">#5</a></td>
+			<td class="gravatar"><img src="http://www.gravatar.com/avatar/db6979f5ed47d412d33288df65f6c25f?s=56" width="56" height="56"></td>
+			<td><span class="project">Project name:</span> Issue description</td>
+			<td>Foo</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="issues">
+<h2>Your Watched Issues</h2>
+<table>
+	<tbody>
+		<tr>
+			<td class="issue-id"><a href="">#5</a></td>
+			<td class="gravatar"><img src="http://www.gravatar.com/avatar/db6979f5ed47d412d33288df65f6c25f?s=56" width="56" height="56"></td>
+			<td><span class="project">Project name:</span> Issue description</td>
+			<td>Foo</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
 {% endblock %}

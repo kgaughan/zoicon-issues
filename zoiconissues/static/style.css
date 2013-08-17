@@ -13,7 +13,6 @@ body {
 body > header {
 	background: #eed;
 	overflow: hidden;
-	margin-bottom: 1ex;
 	border-bottom: 1px solid #ddc;
 }
 body > header h1 {
@@ -42,4 +41,63 @@ body > header ul li a {
 }
 body > header ul li a:hover {
 	background: #ffe;
+}
+
+th, td {
+	text-align: left;
+	vertical-align: top;
+}
+
+.issues, .overview {
+	margin: 2ex 2ex 4ex 2ex;
+}
+.issues h2 {
+	background: #998;
+	color: #eed;
+	padding: 0.5ex 1ex;
+}
+.issues table {
+	width: 100%;
+}
+.issues table tr {
+	border-bottom: 1px solid #998;
+}
+.issues table td, .issues table th {
+	padding: 0.5ex 1ex;
+}
+.issues span.project {
+	font-size: 80%;
+	font-weight: bold;
+	display: block;
+}
+.issues table td.issue-id {
+	font-size: 200%;
+	padding: 0.25ex 0.5ex;
+	line-height: 1;
+	width: 1px;
+	text-align: right;
+	vertical-align: middle;
+}
+.issues table td.issue-id a {
+	color: inherit;
+	text-decoration: none;
+}
+.issues table td.issue-id a:hover {
+	background: #eed;
+}
+.issues table td.gravatar {
+	padding: 0;
+	line-height: 0;
+	width: 56px;
+}
+
+.overview table td {
+	font-size: 200%;
+	padding-right: 2ex;
+	line-height: 1;
+}
+.overview table th {
+	font-weight: normal;
+	padding-right: 4ex;
+	line-height: 1;
 }
