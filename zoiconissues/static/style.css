@@ -19,6 +19,7 @@ body > header h1 {
 	float: left;
 	padding: 0.5ex 1ex;
 	color: #998;
+	text-shadow: 0 1px 1px #ffe;
 }
 body > header h1 a {
 	color: inherit;
@@ -52,15 +53,16 @@ th, td {
 	margin: 2ex 2ex 4ex 2ex;
 }
 .issues h2 {
-	background: #998;
-	color: #eed;
+	background: #48a;
+	color: #aef;
 	padding: 0.5ex 1ex;
+	text-shadow: 0 1px 1px #046;
 }
 .issues table {
 	width: 100%;
 }
 .issues table tr {
-	border-bottom: 1px solid #998;
+	border-bottom: 1px solid #48a;
 }
 .issues table td, .issues table th {
 	padding: 0.5ex 1ex;
@@ -83,7 +85,7 @@ th, td {
 	text-decoration: none;
 }
 .issues table td.issue-id a:hover {
-	background: #eed;
+	background: #aef;
 }
 .issues table td.gravatar {
 	padding: 0;
