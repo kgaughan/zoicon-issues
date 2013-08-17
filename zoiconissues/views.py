@@ -8,13 +8,8 @@ from .core import app
 
 
 @app.route('/')
-def index():
-    return render_template('index.html')
-
-
-@app.route('/about')
-def about():
-    return ''
+def overview():
+    return render_template('overview.html')
 
 
 @app.route('/projects')
